@@ -1,13 +1,13 @@
 <div class="container">
-  <form class="form">
+  <form class="form" (ngSubmit)="login()">
     <div>
       <label for="email">Email:</label>
-      <input type="email" />
+      <input type="email" id="email" [(ngModel)]="email" required />
     </div>
     <div>
       <label for="password">Senha :</label>
-      <input type="password" />
+      <input type="password" id="password" [(ngModel)]="password" />
     </div>
-    <button>Enviar</button>
+    <button type="submit">Enviar</button>
   </form>
 </div>
