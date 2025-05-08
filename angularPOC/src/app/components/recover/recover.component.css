@@ -1,0 +1,95 @@
+/* Estilização geral da página */
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.178);
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Container do formulário */
+  .container {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border: 1px solid #e5e7eb;
+  }
+  
+  /* Título */
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Parágrafo explicativo */
+  p {
+    font-size: 0.95rem;
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Grupo do campo */
+  .form-group,
+  .form div {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label */
+  label {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Input */
+  input[type="email"] {
+    padding: 0.6rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+  }
+  
+  input[type="email"]:focus {
+    border-color: #3b82f6;
+    outline: none;
+  }
+  
+  /* Botão */
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #111827; /* preto moderno */
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #1f2937;
+  }
+  
+  /* Mensagem de erro */
+  .error {
+    color: #dc2626;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+  }
+  
