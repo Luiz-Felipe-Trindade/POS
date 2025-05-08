@@ -2,8 +2,8 @@
   <div class="cadastro-container">
     <h2>Cadastro Empresa</h2>
     <form @submit.prevent="handleCadastro">
-      <input v-model="cnpj" placeholder="CNPJ" required />
-      <input v-model="nome" placeholder="Nome Fantasia" required />
+      <input v-model="email" placeholder="Email" required />
+      <input v-model="senha" placeholder="Senha" required />
       <button type="submit">Entrar</button>
     </form>
   </div>
@@ -13,8 +13,8 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 
-const cnpj = ref("");
-const nome = ref("");
+const email = ref("");
+const senha = ref("");
 const error = ref("");
 const router = useRouter();
 
