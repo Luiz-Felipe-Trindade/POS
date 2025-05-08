@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-recover',
-  standalone: true,
   imports: [FormsModule],
   templateUrl: './recover.component.html',
   styleUrls: ['./recover.component.css'],

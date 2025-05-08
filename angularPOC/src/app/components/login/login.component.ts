@@ -20,4 +20,7 @@ export class LoginComponent {
 
     this.router.navigate(['/dashboard']);
   }
+  recuperar() {
+    this.router.navigate(['/recovery']);
+  }
 }

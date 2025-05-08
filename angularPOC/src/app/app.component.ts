@@ -4,7 +4,7 @@ import { RecoverComponent } from './components/recover/recover.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RecoverComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
