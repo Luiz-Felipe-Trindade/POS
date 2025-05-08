@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Login.css";
 import { useState } from "react";
 export const Login = () => {
@@ -18,11 +18,11 @@ export const Login = () => {
 
   return (
     <div className="container">
-      <form className="form" onSubmit={handleSubmit}>
-      <h1 className="title">Login Sistema</h1>
+      <form className="form2" onSubmit={handleSubmit}>
+        <h1 className="title">Login Sistema</h1>
+
         <div>
           <label htmlFor="email">Email: </label>
-
           <input
             type="email"
             name="email"
@@ -30,8 +30,10 @@ export const Login = () => {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
+            required
           />
         </div>
+
         <div>
           <label htmlFor="password">Senha: </label>
           <input
@@ -41,9 +43,15 @@ export const Login = () => {
             onChange={(e) => {
               setSenha(e.target.value);
             }}
+            required
           />
         </div>
-        <button type="submit">Entrar</button>
+
+        <button type="submit" className="button">
+          Entrar
+        </button>
+        <NavLink to={"/RecoverPassword"}>Esqueci a senha</NavLink>
+        <NavLink to={"/cadastro"}>Criar Conta</NavLink>
       </form>
     </div>
   );

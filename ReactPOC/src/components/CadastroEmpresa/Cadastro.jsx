@@ -19,10 +19,9 @@ export const Cadastro = () => {
   return (
     <div className="container">
       <form className="form" onSubmit={handleSubmit}>
-      <h1 className="title">Cadastro Empresa</h1>
+        <h1 className="title">Cadastro Empresa</h1>
 
         <div>
-
           <label htmlFor="cnpj">CNPJ: </label>
 
           <input
@@ -31,6 +30,7 @@ export const Cadastro = () => {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
+            required
           />
         </div>
         <div>
@@ -41,6 +41,7 @@ export const Cadastro = () => {
             onChange={(e) => {
               setSenha(e.target.value);
             }}
+            required
           />
         </div>
         <button type="submit">Entrar</button>
