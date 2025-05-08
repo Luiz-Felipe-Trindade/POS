@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import "./Login.css";
+import "./Cadastro.css";
 import { useState } from "react";
-export const Login = () => {
+export const Cadastro = () => {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
@@ -19,25 +19,25 @@ export const Login = () => {
   return (
     <div className="container">
       <form className="form" onSubmit={handleSubmit}>
-      <h1 className="title">Login Sistema</h1>
+      <h1 className="title">Cadastro Empresa</h1>
+
         <div>
-          <label htmlFor="email">Email: </label>
+
+          <label htmlFor="cnpj">CNPJ: </label>
 
           <input
-            type="email"
-            name="email"
-            id="email"
+            name="cnpj"
+            id="cnpj"
             onChange={(e) => {
               setEmail(e.target.value);
             }}
           />
         </div>
         <div>
-          <label htmlFor="password">Senha: </label>
+          <label htmlFor="form">Nome Fantasia: </label>
           <input
-            type="password"
-            name="password"
-            id="password"
+            name="nome"
+            id="nome"
             onChange={(e) => {
               setSenha(e.target.value);
             }}
