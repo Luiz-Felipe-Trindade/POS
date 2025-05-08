@@ -23,4 +23,7 @@ export class LoginComponent {
   recuperar() {
     this.router.navigate(['/recovery']);
   }
+  cadastrar() {
+    this.router.navigate(['/cadastro']);
+  }
 }

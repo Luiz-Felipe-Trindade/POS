@@ -1,0 +1,26 @@
+<div class="container">
+  <form class="form" (ngSubmit)="cadastrar()">
+    <h1 class="title">Cadastro</h1>
+
+    <div>
+      <label htmlFor="cnpj">Email: </label>
+      <input
+        name="cnpj"
+        id="email"
+        [(ngModel)]="email"
+        required
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <div>
+      <label htmlFor="form">Senha: </label>
+      <input
+        name="password"
+        id="password"
+        [(ngModel)]="password"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <button type="submit">Entrar</button>
+  </form>
+</div>
