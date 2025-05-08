@@ -1,10 +1,14 @@
 <template>
   <div class="login-container">
-    <h2>Login Empresa</h2>
+    <h2>Faça o seu Login</h2>
     <form @submit.prevent="handleLogin">
       <input type="email" v-model="email" placeholder="Email" required />
       <input type="password" v-model="password" placeholder="Senha" required />
       <button type="submit">Entrar</button>
+      <div>
+        <a @click="recovery">Esqueci a senha</a>
+        <a @click="cadastrar">Cadastre-se agora</a>
+      </div>
     </form>
   </div>
 </template>
@@ -21,18 +25,23 @@ const router = useRouter();
 function handleLogin() {
   router.push("/dashboard");
 }
+
+function recovery() {
+  router.push("/recovery");
+}
+function cadastrar() {
+  router.push("/cadastro");
+}
 </script>
 
 <style scoped>
 .login-container {
-  height: 55vh;
   margin: 0px auto;
   justify-content: center;
   align-items: center;
-
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
 }
 input {
   border-radius: 10px;
@@ -52,5 +61,21 @@ button {
   cursor: pointer;
   width: 320px;
   height: 30px;
+  color: white;
+  background-color: black;
+}
+a {
+  color: blue;
+  text-decoration: underline;
+  margin: 0.3rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="cadastro-container">
     <h2>Cadastro Empresa</h2>
     <form @submit.prevent="handleCadastro">
-      <input  v-model="cnpj" placeholder="CNPJ" required />
+      <input v-model="cnpj" placeholder="CNPJ" required />
       <input v-model="nome" placeholder="Nome Fantasia" required />
       <button type="submit">Entrar</button>
     </form>
@@ -25,7 +25,7 @@ function handleCadastro() {
 
 <style scoped>
 .cadastro-container {
-  height: 55vh;
+  height: 100vh;
   margin: 0px auto;
   justify-content: center;
   align-items: center;
@@ -47,10 +47,12 @@ form {
   flex-direction: column;
 }
 button {
-    width: 320px;
+  width: 320px;
   height: 30px;
   border: 1px solid;
   border-radius: 10px;
   cursor: pointer;
+  color: white;
+  background-color: black;
 }
 </style>

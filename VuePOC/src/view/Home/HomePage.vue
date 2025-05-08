@@ -4,22 +4,26 @@
       <h1 class="title">ERP Manager</h1>
       <p class="subtitle">Sistema de gerenciamento empresarial</p>
 
-      <button class="btn primary" @click="entrarSistema">Entrar no Sistema</button>
-      <button class="btn secondary" @click="cadastrarEmpresa">Cadastrar Empresa</button>
+      <button class="btn primary" @click="entrarSistema">
+        Entrar no Sistema
+      </button>
+      <button class="btn secondary" @click="cadastrarEmpresa">
+        Cadastrar Empresa
+      </button>
     </div>
   </div>
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
+import { useRouter } from "vue-router";
 const router = useRouter();
 const entrarSistema = () => {
-  router.push('/login');
-}
+  router.push("/login");
+};
 
 const cadastrarEmpresa = () => {
-  router.push('/cadastro');
-}
+  router.push("/cadastro");
+};
 </script>
 
 <style scoped>
@@ -28,14 +32,15 @@ const cadastrarEmpresa = () => {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #FFFFFF;
+  margin: auto 0;
+  background-color: #ffffff;
 }
 
 .login-card {
   background: white;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
   max-width: 400px;
