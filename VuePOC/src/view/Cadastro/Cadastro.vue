@@ -2,8 +2,9 @@
   <div class="cadastro-container">
     <h2>Cadastro Empresa</h2>
     <form @submit.prevent="handleCadastro">
-      <input v-model="email" placeholder="Email" required />
-      <input v-model="senha" placeholder="Senha" required />
+      <input type="email" v-model="email" placeholder="Email" required />
+      <input type="password" v-model="senha" placeholder="Senha" required />
+      <input type="password" v-model="confirmsenha" placeholder="Confirmar Senha" required />
       <button type="submit">Entrar</button>
     </form>
   </div>
@@ -15,6 +16,7 @@ import { useRouter } from "vue-router";
 
 const email = ref("");
 const senha = ref("");
+const confirmsenha = ref("");
 const error = ref("");
 const router = useRouter();
 
