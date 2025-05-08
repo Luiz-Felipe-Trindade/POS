@@ -22,11 +22,11 @@ export const Cadastro = () => {
         <h1 className="title">Cadastro Empresa</h1>
 
         <div>
-          <label htmlFor="cnpj">CNPJ: </label>
+          <label htmlFor="email">Email: </label>
 
           <input
-            name="cnpj"
-            id="cnpj"
+            name="email"
+            id="email"
             onChange={(e) => {
               setEmail(e.target.value);
             }}
@@ -34,10 +34,21 @@ export const Cadastro = () => {
           />
         </div>
         <div>
-          <label htmlFor="form">Nome Fantasia: </label>
+          <label htmlFor="form">Senha: </label>
           <input
-            name="nome"
-            id="nome"
+            name="senha"
+            id="senha"
+            onChange={(e) => {
+              setSenha(e.target.value);
+            }}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="form">Confirmar Senha: </label>
+          <input
+            name="confirmarsenha"
+            id="confirmarsenha"
             onChange={(e) => {
               setSenha(e.target.value);
             }}
