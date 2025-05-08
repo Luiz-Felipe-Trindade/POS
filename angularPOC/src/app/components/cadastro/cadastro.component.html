@@ -15,9 +15,20 @@
     <div>
       <label htmlFor="form">Senha: </label>
       <input
+        type="password"
         name="password"
         id="password"
         [(ngModel)]="password"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <div>
+      <label htmlFor="form">Confirmar Senha: </label>
+      <input
+         type="password"
+        name="confirmarpassword"
+        id="confirmarpassword"
+        [(ngModel)]="confirmpassword"
         [ngModelOptions]="{ standalone: true }"
       />
     </div>

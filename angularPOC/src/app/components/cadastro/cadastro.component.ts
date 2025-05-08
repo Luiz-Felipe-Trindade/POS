@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 export class CadastroComponent {
   email: string = '';
   password: string = '';
+  confirmpassword: string = '';
+
 
   constructor(private router: Router) {}
 
