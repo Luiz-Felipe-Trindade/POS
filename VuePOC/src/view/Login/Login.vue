@@ -35,11 +35,18 @@ function handleLogin() {
   font-family: "Roboto", sans-serif;
 }
 input {
+  border-radius: 10px;
+  border: 1px solid;
   margin-bottom: 10px;
   padding: 8px;
 }
 form {
   display: flex;
   flex-direction: column;
+}
+button {
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
 }
 </style>
